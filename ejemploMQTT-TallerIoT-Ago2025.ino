@@ -14,8 +14,8 @@ Código basado en:
 
 
 // Replace the next variables with your SSID/Password combination
-const char* ssid = "RODBARR-NG_2.4G";
-const char* password = "%Internet9876";
+const char* ssid = "galileo";
+const char* password = "";
 
 // Add your MQTT Broker IP address, example:
 //const char* mqtt_server = "";
@@ -136,3 +136,4 @@ void loop() {
     delay(1000);
   }
 }
+
