@@ -133,8 +133,9 @@ void loop() {
     client.publish("tallerIoT/e41/temp", msg);
 
     //Delay between next data
-    delay(10000);
+    delay(30000);
   }
 }
+
 
 
