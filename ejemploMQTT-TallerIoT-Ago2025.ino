@@ -94,7 +94,7 @@ void reconnect() {
       Serial.print(client.state());
       Serial.println(" try again in 5 seconds");
       // Wait 5 seconds before retrying
-      delay(5000);
+      delay(10000);
     }
   }
 }
@@ -112,7 +112,7 @@ void loop() {
     Serial.print("Requesting temperatures...");
     sensorDS18B20.requestTemperatures();
     Serial.println("DONE");
-    delay(1500);
+    delay(5000);
     
     temperature = sensorDS18B20.getTempCByIndex(0);
     // Check if reading was successful
@@ -133,7 +133,8 @@ void loop() {
     client.publish("tallerIoT/e41/temp", msg);
 
     //Delay between next data
-    delay(1000);
+    delay(10000);
   }
 }
+
 
